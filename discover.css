@@ -1,0 +1,164 @@
+
+
+.discover-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  width:auto;
+  
+  
+}
+.discover-main-section .call-to-action{
+  width: 44.3rem;
+  
+}
+
+.discover-main-section .covers-image {
+  width:30vw;
+  margin-left: 2rem;
+  height: auto;
+  max-width: 350px;
+}
+
+.icon-section {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem;
+  padding: .75rem;
+  width: 100px;
+  height: 100px;
+  background-color: #861616;
+  margin-bottom: 2rem;
+  box-shadow: 8px 8px rgba(0,0,0,0.3);
+}
+
+.icon:hover{
+  background-color: #dc2727;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 40px;
+}
+
+@media (max-width:800px){
+  .discover-main-section{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .discover-main-section .covers-image{
+    margin-top: 2rem;
+    height: 30vh;
+    width: auto;
+  }
+}
+
+.title-discover{
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
+}
+
+.subtitle-discover{
+  max-width: 350px;
+}
+
+.divisor{
+  background-color: white;
+  width: 10px;
+  height: 500px;
+  margin-right: 8rem;
+  margin-top: -2rem;
+  
+}
+/*SLIDE-SHOW*/
+.dots-slider{
+  display: flex;
+  text-align:initial;
+  position: absolute;
+  margin-top:25rem ;
+  margin-left: 67%;
+
+  
+}
+
+.slider-dots-container{
+  position: relative;
+  display: flex;
+  padding: 2rem;
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color:#636363;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+  margin: 5px;
+  
+}
+
+
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.active, .dot:hover {
+  background-color: #ffff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/*-------------------MEDIA QUERY-------------------*/
+
+@media(max-width:900px){
+  .title-discover{
+    font-weight: 400;
+    font-size: 1.7em;
+    margin-bottom: 1rem;
+    margin-top:7.5rem;
+    justify-content:left;
+  }
+  
+  .covers-image, .dots-slider{
+     flex-direction: column;
+    justify-content: center;
+  }
+   
+  .divisor{
+    visibility: hidden;
+  }
+}
